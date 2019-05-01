@@ -8,10 +8,18 @@ namespace datehelper
 {
     public class dateHelper
     {
-        public int getDaysInMonth(DateTime currDate)
+        DateTime dt;
+
+        public dateHelper(DateTime currDate)
+        {
+            dt = currDate;
+        }
+        private int getDaysInMonth()
         {
             
-            return DateTime.DaysInMonth(currDate.Year, currDate.Month);
+            return DateTime.DaysInMonth(dt.Year, dt.Month);
         }
+        public string ShowDateString { get { return string.Format("The number of days in the month is: {0}", getDaysInMonth().ToString()); } }
+
     }
 }

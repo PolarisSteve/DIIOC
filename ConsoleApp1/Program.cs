@@ -7,9 +7,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var dtDay = new dateHelper();
+            var dtDay = new dateHelper(DateTime.Now);
             Console.WriteLine("Hello World!");
-            Console.WriteLine(string.Format("The number of days in the month is: {0}", dtDay.getDaysInMonth().ToString()));
+            Console.WriteLine(dtDay.ShowDateString);
             Console.Read();
         }
     }
