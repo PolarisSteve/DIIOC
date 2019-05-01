@@ -8,9 +8,9 @@ namespace datehelper
 {
     public class dateHelper
     {
-        public int getDaysInMonth()
+        public int getDaysInMonth(DateTime currDate)
         {
-            DateTime currDate = DateTime.Now;
+            
             return DateTime.DaysInMonth(currDate.Year, currDate.Month);
         }
     }

@@ -14,7 +14,7 @@ namespace UnitTestProject1
             var tstdate = new dateHelper();
 
             DateTime currDate = DateTime.Now;
-            Assert.AreEqual(tstdate.getDaysInMonth(), DateTime.DaysInMonth(currDate.Year, currDate.Month));
+            Assert.AreEqual(tstdate.getDaysInMonth(DateTime.Now), DateTime.DaysInMonth(currDate.Year, currDate.Month));
         }
         [TestMethod]
         public void checkFebTypical()
@@ -22,7 +22,7 @@ namespace UnitTestProject1
             //This will pass one day a month and doesnt really check for February
             var tstdate = new dateHelper();
 
-            Assert.AreEqual(tstdate.getDaysInMonth(), DateTime.DaysInMonth(2018, 2));
+            Assert.AreEqual(tstdate.getDaysInMonth(new DateTime(2018, 2, 4)), DateTime.DaysInMonth(2018, 2));
 
         }
         [TestMethod]
@@ -31,7 +31,7 @@ namespace UnitTestProject1
             //This will pass one day a month and doesnt really check for February or Leap year
             var tstdate = new dateHelper();
 
-            Assert.AreEqual(tstdate.getDaysInMonth(), DateTime.DaysInMonth(2016, 2));
+            Assert.AreEqual(tstdate.getDaysInMonth(new DateTime(2016, 2, 4)), DateTime.DaysInMonth(2016, 2));
 
         }
 
