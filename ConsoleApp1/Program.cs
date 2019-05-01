@@ -1,5 +1,5 @@
 ﻿using System;
-using datehelper;
+using facadeClass;
 
 namespace ConsoleApp1
 {
@@ -7,9 +7,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var dtDay = new dateHelper(DateTime.Now);
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(dtDay.ShowDateString);
+            FacadeClass fc = new FacadeClass();
+            fc.DisplayStrings();
             Console.Read();
         }
     }

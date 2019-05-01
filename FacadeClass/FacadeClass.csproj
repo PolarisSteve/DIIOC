@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FacadeClass\FacadeClass.csproj" />
+    <ProjectReference Include="..\dateHelper\dateHelper.csproj" />
+    <ProjectReference Include="..\HelloWorldClass\HelloWorldClass.csproj" />
   </ItemGroup>
 
 </Project>
