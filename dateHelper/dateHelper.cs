@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dateHelper
+namespace datehelper
 {
     public class dateHelper
     {
