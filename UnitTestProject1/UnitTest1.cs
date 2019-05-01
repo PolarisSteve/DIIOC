@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using dateHelper;
+using datehelper;
 
 namespace UnitTestProject1
 {
@@ -20,7 +20,7 @@ namespace UnitTestProject1
         public void checkFebTypical()
         {
             //This will pass one day a month and doesnt really check for February
-            var tstdate = new datehelper();
+            var tstdate = new dateHelper();
 
             Assert.AreEqual(tstdate.getDaysInMonth(), DateTime.DaysInMonth(2018, 2));
 
@@ -29,7 +29,7 @@ namespace UnitTestProject1
         public void checkFebLeapYear()
         {
             //This will pass one day a month and doesnt really check for February or Leap year
-            var tstdate = new datehelper();
+            var tstdate = new dateHelper();
 
             Assert.AreEqual(tstdate.getDaysInMonth(), DateTime.DaysInMonth(2016, 2));
 
