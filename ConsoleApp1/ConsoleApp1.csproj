@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FacadeClass\FacadeClass.csproj" />
+    <ProjectReference Include="..\InjectorClass\InjectorClass.csproj" />
   </ItemGroup>
 
 </Project>

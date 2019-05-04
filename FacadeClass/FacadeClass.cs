@@ -1,17 +1,17 @@
-﻿using datehelper;
-using HelloWorldClass;
-using System;
+﻿using System;
+using static InterfaceClass.Interfaces;
 
 namespace facadeClass
 {
-    public class FacadeClass
+    public class FacadeClass : IFacadeClass
     {
-        HelloWorld a = new HelloWorld();
-        dateHelper b = new dateHelper(DateTime.Now);
+        IHelloWorld a;
+        IDisplayDateClass b;
 
-        public FacadeClass()
+        public FacadeClass(IHelloWorld hw, IDisplayDateClass dd)
         {
-
+            a = hw;
+            b = dd;
         }
 
         public void DisplayStrings()

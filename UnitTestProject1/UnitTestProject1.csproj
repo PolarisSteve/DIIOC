@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dateHelper\dateHelper.csproj" />
+    <ProjectReference Include="..\DateHelperClass\DateHelperClass.csproj" />
   </ItemGroup>
 
 </Project>

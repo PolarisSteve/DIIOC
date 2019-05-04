@@ -1,6 +1,7 @@
+using DateHelperClass;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using datehelper;
+
 
 namespace UnitTestProject1
 {
@@ -11,7 +12,7 @@ namespace UnitTestProject1
         public void checkCurrentDay()
         {
             //This will always pass
-            var tstdate = new dateHelper(DateTime.Now);
+            var tstdate = new dateHelper(new DateMock(DateTime.Now));
 
             Assert.AreEqual(
                 tstdate.ShowDateString,
@@ -25,7 +26,7 @@ namespace UnitTestProject1
         public void checkFebTypical()
         {
             //This will pass one day a month and doesnt really check for February
-            var tstdate = new dateHelper(new DateTime(2018, 2, 4));
+            var tstdate = new dateHelper(new DateMock(new DateTime(2018, 2, 4)));
 
             Assert.AreEqual(
                 tstdate.ShowDateString,
@@ -38,7 +39,7 @@ namespace UnitTestProject1
         public void checkFebLeapYear()
         {
             //This will pass one day a month and doesnt really check for February or Leap year
-            var tstdate = new dateHelper(new DateTime(2016, 2, 4));
+            var tstdate = new dateHelper(new DateMock(new DateTime(2016, 2, 4)));
 
             Assert.AreEqual(
                 tstdate.ShowDateString,

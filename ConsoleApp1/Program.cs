@@ -1,5 +1,6 @@
-﻿using System;
-using facadeClass;
+﻿using InjectorClass;
+using System;
+using static InterfaceClass.Interfaces;
 
 namespace ConsoleApp1
 {
@@ -7,7 +8,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            FacadeClass fc = new FacadeClass();
+            Injector inj = new Injector();
+            IFacadeClass fc = inj.GetInstance<IFacadeClass>();
+
             fc.DisplayStrings();
             Console.Read();
         }
