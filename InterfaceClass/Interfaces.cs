@@ -1,9 +1,15 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 
 namespace InterfaceClass
 {
     public class Interfaces
     {
+        public interface ILoggerClass
+        {
+            ILogger GetLogger(string callingModule);
+        }
+
         public interface IDisplayDateClass
         {
             string ShowDateString { get; }

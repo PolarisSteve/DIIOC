@@ -21,6 +21,7 @@ namespace InjectorClass
                .AddSingleton(typeof(IHelloWorld), typeof(HelloWorld))
                .AddSingleton(typeof(IDisplayDateClass), typeof(dateHelper))
                .AddSingleton(typeof(IDateFactory),typeof(DateFactory))
+               .AddSingleton(typeof(ILoggerClass),typeof(LoggerClass))
                .BuildServiceProvider();
 
         }
