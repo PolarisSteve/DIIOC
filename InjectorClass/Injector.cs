@@ -1,9 +1,9 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using InterfaceClass;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using static InterfaceClass.Interfaces;
 
@@ -15,10 +15,16 @@ namespace InjectorClass
 
         public Injector()
         {
-            var FacadeClass = Assembly.LoadFrom("FacadeClass.dll");
-            var DateHelperClass = Assembly.LoadFrom("DateHelperClass.dll");
-            var HelloWorldClass = Assembly.LoadFrom("HelloWorldClass.dll");
+            List<Assembly> DynClass = new List<Assembly>();
+           
+            //This can be replaced with a loop in future. Searching the bin directory.
+            DynClass.Add(Assembly.LoadFrom("FacadeClass.dll"));
+            DynClass.Add(Assembly.LoadFrom("DateHelperClass.dll"));
+            DynClass.Add(Assembly.LoadFrom("HelloWorldClass.dll"));
 
+            //Notice we do not need to register the types for the injector or Interface classes.
+            //This is because they have a hard dependency to project and are included in the executing assembly.
+            
 
             //Wire up the 
             var sc = new ServiceCollection();
@@ -30,10 +36,8 @@ namespace InjectorClass
                 
             var containerBuilder = new ContainerBuilder();
             containerBuilder.Populate(sc);
-            containerBuilder.RegisterAssemblyTypes(DateHelperClass).As<Interfaces.IDateFactory>();
-            containerBuilder.RegisterAssemblyTypes(FacadeClass).As<Interfaces.IFacadeClass>();
-            containerBuilder.RegisterAssemblyTypes(DateHelperClass).As<Interfaces.IDisplayDateClass>();
-            containerBuilder.RegisterAssemblyTypes(HelloWorldClass).As<Interfaces.IHelloWorld>();
+            //The following allows for the resolver to also look into its own assembly to find interfaces. (InstancePerDependency)
+            containerBuilder.RegisterAssemblyTypes(DynClass.ToArray()).InstancePerDependency().AsImplementedInterfaces();
 
             var container = containerBuilder.Build();
             _sp = new AutofacServiceProvider(container);    

@@ -1,23 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="(@1)" Category="CodeSchema_Assembly" Bounds="0,0,146.353333333333,25" CodeSchemaProperty_StrongName="ConsoleApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(d52864e1-25b0-4ccc-9602-f99df5497b3f.OutputPath)" Group="Collapsed" Label="ConsoleApp1.dll" />
-    <Node Id="(@2)" Category="CodeSchema_Assembly" Bounds="0,110,161.666666666667,25" CodeSchemaProperty_StrongName="HelloWorldClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(888b22a9-72b9-4b5e-9c7c-9bf64cf54b5b.OutputPath)" Group="Collapsed" Label="HelloWorldClass.dll" />
-    <Node Id="(@3)" Category="CodeSchema_Assembly" Bounds="0,0,148.293333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="NotFetched" FilePath="$(405d3223-7974-4116-8393-695acbd32661.OutputPath)" Group="Collapsed" Label="InterfaceClass.dll" />
-    <Node Id="(@4)" Category="CodeSchema_Assembly" Bounds="176.353333333333,0,138.66,25" CodeSchemaProperty_StrongName="FacadeClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b8a6e292-3cbf-4b96-91db-ddddfcf2b449.OutputPath)" Group="Collapsed" Label="FacadeClass.dll" />
-    <Node Id="(@5)" Category="CodeSchema_Assembly" Bounds="0,165,162.18,25" CodeSchemaProperty_StrongName="DateHelperClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(654713a7-2227-4749-b1db-71412ea5d6f7.OutputPath)" Group="Collapsed" Label="DateHelperClass.dll" />
-    <Node Id="(@6)" Category="CodeSchema_Assembly" Bounds="2.13166666666665,55,142.09,25" CodeSchemaProperty_StrongName="InjectorClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(7410296d-6ead-41e7-92a0-be2fbf246b7a.OutputPath)" Group="Collapsed" Label="InjectorClass.dll" />
+    <Node Id="(@3)" Category="CodeSchema_Assembly" Bounds="229.6,81.8001,161.666666666667,25" CodeSchemaProperty_StrongName="HelloWorldClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(888b22a9-72b9-4b5e-9c7c-9bf64cf54b5b.OutputPath)" Group="Collapsed" Label="HelloWorldClass.dll" UseManualLocation="True" />
+    <Node Id="(@6)" Category="CodeSchema_Assembly" Bounds="315.723333333333,17.8,138.66,25" CodeSchemaProperty_StrongName="FacadeClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(b8a6e292-3cbf-4b96-91db-ddddfcf2b449.OutputPath)" Group="Collapsed" Label="FacadeClass.dll" UseManualLocation="True" />
+    <Node Id="(@7)" Category="CodeSchema_Assembly" Bounds="21.6,104.90015,162.18,25" CodeSchemaProperty_StrongName="DateHelperClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(654713a7-2227-4749-b1db-71412ea5d6f7.OutputPath)" Group="Collapsed" Label="DateHelperClass.dll" UseManualLocation="True" />
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-130.661666666667,-52.8002,146.353333333333,25" CodeSchemaProperty_StrongName="ConsoleApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(d52864e1-25b0-4ccc-9602-f99df5497b3f.OutputPath)" Group="Collapsed" Label="ConsoleApp1.dll" UseManualLocation="True" />
+    <Node Id="@5" Category="CodeSchema_Assembly" Bounds="45.6916666666666,-42.8001,148.293333333333,25" CodeSchemaProperty_StrongName="InterfaceClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(405d3223-7974-4116-8393-695acbd32661.OutputPath)" Group="Collapsed" Label="InterfaceClass.dll" UseManualLocation="True" />
+    <Node Id="@9" Category="CodeSchema_Assembly" Bounds="-87.4683333333333,49.90005,142.09,25" CodeSchemaProperty_StrongName="InjectorClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" FilePath="$(7410296d-6ead-41e7-92a0-be2fbf246b7a.OutputPath)" Group="Collapsed" Label="InjectorClass.dll" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="(@1)" Target="(@6)" Category="CodeSchema_Calls" Bounds="73.1766662597656,25,0,21" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+    <Link Source="(@3)" Target="@5" Category="Implements" Bounds="146.492070306701,-12.8753986299274,144.820607522067,94.6754986299274" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1">
       <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="(@6)" Target="@5" Category="References" Bounds="183.318181062902,-15.7953204045901,147.029178187881,33.5953204045902" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="Implements" />
+    </Link>
+    <Link Source="(@7)" Target="@5" Category="References" Bounds="104.141278292804,-8.86015236994844,13.2078285929825,113.760302369948" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="Implements" />
+    </Link>
+    <Link Source="@2" Target="@5" Category="References" Bounds="15.6916666666666,-36.1734222625336,21.0142775938082,1.18509433257049" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeMap_ExternalReference" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@2" Target="@9" Category="CodeSchema_Calls" Bounds="-52.487243584282,-27.8002,27.7249308364466,69.3434426627213" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeMap_ProjectReference" />
+    </Link>
+    <Link Source="@9" Target="@5" Category="References" Bounds="1.95064808237457,-12.7377334319886,92.0724374960395,62.6377834319886" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeMap_ProjectReference" />
+      <Category Ref="Implements" />
     </Link>
   </Links>
   <Categories>
+    <Category Id="CodeMap_ExternalReference" Label="External Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
     <Category Id="CodeMap_ProjectReference" Label="Project Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
     <Category Id="CodeSchema_Assembly" Label="Assembly" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Assembly" NavigationActionLabel="Assemblies" />
     <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
     <Category Id="File" Label="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="Files" />
+    <Category Id="Implements" Label="Implements" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Implemented by" OutgoingActionLabel="Implements" />
+    <Category Id="References" Label="References" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
   </Categories>
   <Properties>
     <Property Id="Bounds" DataType="System.Windows.Rect" />
@@ -42,6 +66,7 @@
     <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
     <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
     <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
     <Property Id="Value" DataType="System.String" />
     <Property Id="ValueLabel" DataType="System.String" />
     <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
@@ -53,11 +78,14 @@
   </QualifiedNames>
   <IdentifierAliases>
     <Alias n="1" Uri="Assembly=$(d52864e1-25b0-4ccc-9602-f99df5497b3f.OutputPathUri)" />
-    <Alias n="2" Uri="Assembly=$(888b22a9-72b9-4b5e-9c7c-9bf64cf54b5b.OutputPathUri)" />
-    <Alias n="3" Uri="Assembly=$(405d3223-7974-4116-8393-695acbd32661.OutputPathUri)" />
-    <Alias n="4" Uri="Assembly=$(b8a6e292-3cbf-4b96-91db-ddddfcf2b449.OutputPathUri)" />
-    <Alias n="5" Uri="Assembly=$(654713a7-2227-4749-b1db-71412ea5d6f7.OutputPathUri)" />
-    <Alias n="6" Uri="Assembly=$(7410296d-6ead-41e7-92a0-be2fbf246b7a.OutputPathUri)" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Uri="Assembly=$(888b22a9-72b9-4b5e-9c7c-9bf64cf54b5b.OutputPathUri)" />
+    <Alias n="4" Uri="Assembly=$(405d3223-7974-4116-8393-695acbd32661.OutputPathUri)" />
+    <Alias n="5" Id="(@4)" />
+    <Alias n="6" Uri="Assembly=$(b8a6e292-3cbf-4b96-91db-ddddfcf2b449.OutputPathUri)" />
+    <Alias n="7" Uri="Assembly=$(654713a7-2227-4749-b1db-71412ea5d6f7.OutputPathUri)" />
+    <Alias n="8" Uri="Assembly=$(7410296d-6ead-41e7-92a0-be2fbf246b7a.OutputPathUri)" />
+    <Alias n="9" Id="(@8)" />
   </IdentifierAliases>
   <Styles>
     <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
