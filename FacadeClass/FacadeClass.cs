@@ -20,6 +20,9 @@ namespace facadeClass
 
         public void DisplayStrings()
         {
+            ////Test AOP
+            //throw new Exception("Steve was here");
+
             _lg.LogInformation("------------");
             Console.WriteLine(a.DisplayHello);
             Console.WriteLine(b.ShowDateString);

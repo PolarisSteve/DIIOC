@@ -13,6 +13,8 @@ namespace DateHelperClass
         }
         private int getDaysInMonth()
         {
+            //Test AOP
+            //throw new Exception("Steve was here too");
             return DateTime.DaysInMonth(dt.Year, dt.Month);
         }
         public string ShowDateString { get { return string.Format("The number of days in the month is: {0}", getDaysInMonth().ToString()); } }
