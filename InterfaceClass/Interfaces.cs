@@ -5,6 +5,11 @@ namespace InterfaceClass
 {
     public class Interfaces
     {
+        public interface IDateFactory
+        {
+            DateTime getCurrentDate { get; }
+        }
+
         public interface ILoggerClass
         {
             ILogger GetLogger(string callingModule);

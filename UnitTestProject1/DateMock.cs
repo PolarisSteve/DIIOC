@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static InterfaceClass.Interfaces;
 
 namespace UnitTestProject1
 {

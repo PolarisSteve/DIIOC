@@ -8,4 +8,8 @@
     <ProjectReference Include="..\InterfaceClass\InterfaceClass.csproj" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(TargetDir)HelloWorldClass.* $(SolutionDir)ConsoleApp1\bin\Debug\netcoreapp2.1\*.*" />
+  </Target>
+
 </Project>

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace DateHelperClass
 {
-    public interface IDateFactory
-    {
-        DateTime getCurrentDate { get; }
-    }
+    //public interface IDateFactory
+    //{
+    //    DateTime getCurrentDate { get; }
+    //}
 }

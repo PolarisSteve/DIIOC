@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
@@ -12,9 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DateHelperClass\DateHelperClass.csproj" />
-    <ProjectReference Include="..\FacadeClass\FacadeClass.csproj" />
-    <ProjectReference Include="..\HelloWorldClass\HelloWorldClass.csproj" />
     <ProjectReference Include="..\InterfaceClass\InterfaceClass.csproj" />
   </ItemGroup>
 
