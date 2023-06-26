@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy $(TargetDir)HelloWorldClass.* $(SolutionDir)ConsoleApp1\bin\Debug\netcoreapp2.1\*.*" />
+    <Exec Command="copy &quot;$(TargetDir)HelloWorldClass.*&quot; &quot;$(SolutionDir)ConsoleApp1\bin\Debug\netcoreapp3.1\*.*&quot;" />
   </Target>
 
 </Project>
